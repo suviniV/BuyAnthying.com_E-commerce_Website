@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="/mainPage/mainPage.css">
+    <link rel="stylesheet" href="/mainPage/feedback.css">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Style the form element with a border around it */
+        
+        form {
+            border: 3px solid #f1f1f0;
+        }
+        /* Add some padding and a grey background color to containers */
+        
+        .container {
+            padding: 30px;
+            background-color: white;
+        }
+        /* Style the input elements */
+        
+        input[type=text] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px;
+            border: 1px solid black;
+        }
+        /* Add margins to the checkbox */
+        
+        input[type=checkbox] {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        /* Style the submit button */
+        
+        input[type=submit] {
+            width: 10%;
+            border: none;
+            border-radius: 4%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+        }
+        
+        input[type=submit]:hover {
+            opacity: 0.6;
+        }
+        
+        .button {
+            padding: 75px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+    <title>Personalized Newsletter</title>
+</head>
+
+<body>
+    <div class="heading">
+        <img src="/images/siteLogo.png" alt="logo" width="200px" height="150px;">
+
+        <h1>Newsletter Subscription</h1>
+
+    </div>
+    <div class="navbar">
+
+
+        <a href="/mainPage/CourseWork1.html" class="active">Home</a>
+        <a href="/aboutUs/abtUs.html" target="_self">About us</a>
+        <a href="/Gallery/gallery_page.html" target="_self">Gallery</a>
+        <a href="/products/buyproductspage.html" target="_self">Products</a>
+        <button class="open-Quiz" onclick="openQuiz()">Open Quiz</button>
+        <div class="navbarright">
+            <a href="/signUp/signup_form.html" target="_self">Login/Sign up</a>
+
+        </div>
+
+    </div>
+    <form name="f1" action="mailto:company@pvt.com" onsubmit="return validateForm()" method="post">
+        <div class="container">
+            <h1>Subscribe to our Newsletter</h1>
+            <br>
+            <p>Fill the required fileds and click on send button to subscribe to our personalized newsletter.</p>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f0">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Name" name="name">
+
+            <label for="mail">Email address</label>
+            <input type="text" id="mail" placeholder="Email address" name="mail">
+
+            <label for="nic">NIC number</label>
+            <input type="text" id="nic" placeholder="NIC number" name="nic">
+
+            <label>
+            <input type="checkbox" checked="checked" name="checkbox"> Daily Newsletter
+        </label>
+        </div>
+
+        <div class="button">
+            <input type="submit" value="Send" name="submit">
+        </div>
+    </form>
+
+    <script>
+        function validateForm() {
+            let x = document.forms["f1"]["name"].value;
+            let y = document.forms["f1"]["nic"].value;
+            let z = document.forms["f1"]["mail"].value;
+
+            if (x == "") {
+                alert("Name must be filled out")
+                return (false)
+            }
+            if (y == "") {
+                alert("NIC must be filled out")
+                return (false)
+            }
+            if (z == "") {
+                alert("Email must be filled out")
+                return (false)
+            }
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(f1.mail.value) && y.length == 12) {
+                alert("Dear " + x + ", you have successfully subscribed for a personalized newsletter");
+                return (true)
+            }
+            if (y.length != 12) {
+                alert("You have entered an invalid NIC number");
+            } else {
+                alert("You have entered an invalid email")
+            }
+            return (false)
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="/mainPage/CourseWork1.html">Home</a>
+            </li>
+            <li>
+                <a href="/Gallery/gallery_page.html">Gallery</a>
+            </li>
+            <li>
+                <a href="/aboutUs/abtUs.html">About us</a>
+            </li>
+            <li>
+                <a href="/student4/EditorsPage_Sathila.html">About editor</a>
+            </li>
+            <li>
+                <a href="/mainPage/ActivationForm%20(1).html">Subscribe to newsletter</a>
+            </li>
+
+        </ul>
+        <p class="copyright">
+            BuyAnything.com @ 2022
+        </p>
+    </footer>
+    <script src="/mainPage/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Signup Form</title>
+      <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/signUp/signup_form.css">
+    <link rel="stylesheet" href="/mainPage/mainPage.css">
+    
+   
+
+
+</head>
+
+<body>
+    <div class="heading">
+
+        <img src="/images/siteLogo.png" alt="logo" width="200px" height="150px;">
+        
+
+    </div>
+
+    <div class="navbar">
+
+
+        <a href="/mainPage/CourseWork1.html" target="_self" >Home</a>
+        <a href="/aboutUs/abtUs.html" target="_self">About us</a>
+        <a href="/Gallery/gallery_page.html" target="_self">Gallery</a>
+        <a href="/products/buyproductspage.html" target="_self" >Products</a>
+        
+        <div class="navbarright">
+            <a href="/signUp/signup_form.html" target="_self" class="active">Login/Sign up</a>
+
+        </div>
+
+    </div>
+    <video id="background-video" autoplay loop muted poster="">
+        <source src="/images/highway-loop.mp4" type="video/mp4">
+    </video>
+    <div class="wrapper">
+        <div class="headline">
+            <h1>Welcome. In order for us to recommend you the best items please Signup with us.</h1>
+        </div>
+        <form class="form" id="form" method="post" action="#">
+            <div class="signup">
+                <label for="name"></label>
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Full name">
+                </div>
+                <span style="color: red;" id="errorName"></span>
+
+                <label for="email"></label>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <span style="color: red;" id="errorEmail"></span>
+
+                <label for="number"></label>
+                <div class="form-group">
+                    <input type="number" name="tel" id="number" placeholder="Tel No">
+                </div>
+                <span style="color: red;" id="errorTel"></span>
+
+                <label for="user_preference1"></label>
+                <div class="form-group">
+                    <select name="user_preference1" id="user_preference1" onchange="up1(this, this.value)">
+                        <option value="" disabled selected hidden>Select your preferred field 1 </option>
+                        <option value="Mobile Phones">Mobile Phones</option>
+                        <option value="Earphones">Earphones</option>
+                        <option value="Laptops">Laptops</option>
+                        <option value="TV">TV</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <span style="color: red;" id="errorPref1"></span>
+
+                <label for="user_preference2"></label>
+                <div class="form-group">
+                    <select name="user_preference2" id="user_preference2" onchange="up2(this,this.value)"> 
+                        <option value="" disabled selected hidden>Select your preferred field 2 </option>
+                        <option value="Mobile Phones" >Mobile Phones</option>
+                        <option value="Earphones">Earphones</option>
+                        <option value="Laptops">Laptops</option>
+                        <option value="TV">TV</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <span style="color: red;" id="errorPref2"></span>
+
+                <label for="user_preference3"></label>
+                <div class="form-group">
+                    <select name="user_preference3" id="user_preference3" onchange="">
+                        <option value="" disabled selected hidden>Select your preferred field  3</option>
+                        <option value="Mobile Phones">Mobile Phones</option>
+                        <option value="Earphones">Earphones</option>
+                        <option value="Laptops">Laptops</option>
+                        <option value="TV">TV</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <span style="color: red;" id="errorPref3"></span>
+
+                <label for="password"></label>
+                <div class="form-group">
+                    <input name="errorPassword" id="password" type="password" placeholder="Password">
+                </div>
+                <span style="color: red;" id="errorPassword"></span>
+
+                <label for="repassword"></label>
+                <div class="form-group">
+                    <input name="errorRepPassword" id="repassword" type="password" placeholder="Repeat Password">
+                </div>
+                <span style="color: red;" id="errorRepPassword"></span>
+
+                <button type="submit" value="Click" class="btn">SIGN UP</button>
+
+                <div class="account-exist">
+                    <p style="color: black;">Already have an account?</p><a href="#" id="login">Login</a>
+                </div>
+            </div>
+
+            <div class="signin">
+                <label for="emailLogin"></label>
+                <div class="form-group">
+                    <input name="loginEmail" type="email" id="emailLogin" placeholder="Email">
+                </div>
+                <span style="color: red;" id="loginEmail"></span>
+
+                <label for="passwordLogin"></label>
+                <div class="form-group">
+                    <input name="loginPassword" type="password" id="passwordLogin" placeholder="Password">
+                </div>
+                <span style="color: red;" id="loginPassword"></span>
+
+                <label for="checkbox"></label>
+                <div class="forget-password">
+                    <div class="check-box">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox">Remember me</label>
+                    </div>
+                    <a href="#">Forget password?</a>
+                </div>
+
+                <button type="submit" class="btn" onclick="validateForm(this.form)">LOGIN</button>
+
+                <div class="account-exist">
+                    <p style="color: black;">Create a New account?</p><a href="#" id="signup">Signup</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="/signUp/signup_form.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="/mainPage/CourseWork1.html">Home</a>
+            </li>
+            <li>
+                <a href="/Gallery/gallery_page.html">Gallery</a>
+            </li>
+            <li>
+                <a href="/aboutUs/abtUs.html">About us</a>
+            </li>
+            <li>
+                <a href="/student1/editor_page.html">About editor</a>
+            </li>
+            <li>
+                <a href="/mainPage/ActivationForm%20(1).html">Subscribe to newsletter</a>
+            </li>
+
+        </ul>
+        <p class="copyright">
+            BuyAnything.com @ 2022
+        </p>
+    </footer>
+
+</body>
+
+</html>

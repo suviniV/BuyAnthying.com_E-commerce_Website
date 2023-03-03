@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #8c7ae6;
+}
+
+
+.wrapper {
+    padding: 50px 25px 0;
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.headline {
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 40px;
+}
+
+
+/* The grid: Four equal columns that floats next to each other */
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+
+
+/* Style the images inside the grid */
+
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* The expanding image container */
+
+.container {
+    margin-top: 70px;
+    position: relative;
+    /* display: none; */
+}
+
+
+/* Expanding image text */
+
+#imgtext {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20%;
+}

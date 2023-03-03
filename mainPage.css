@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.heading {
+    padding: 70px;
+    text-align: center;
+    background: #0000FF;
+    color: black;
+    background-image: url(/images/test11.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    width: 100px;
+    float: left;
+    display: block;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.heading h1 {
+    font-size: 80px;
+}
+
+.heading p {
+    font-size: 25px;
+}
+
+.description {
+    text-align: center;
+    padding: inherit;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+footer {
+    text-decoration: none;
+    text-align: center
+}
+
+.video {
+    text-align: center;
+}
+
+.partners {
+    text-align: center;
+}
+
+.partners h1 {
+    text-indent: 50px;
+}
+
+.brands {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.brand1 {
+    padding: 20px;
+    text-align: center;
+}
+
+.brand1:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.brand2 {
+    padding: 20px;
+    text-align: center;
+}
+
+.brand2:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.brand3 {
+    padding: 20px;
+    text-align: center;
+}
+
+.brand3:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.brand4 {
+    padding: 20px;
+    text-align: center;
+}
+
+.brand4:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.brand5 {
+    padding: 20px;
+    text-align: center;
+}
+
+.brand5:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.brand6 {
+    padding: 20px;
+    text-align: center;
+}
+
+.brand6:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+    padding: 40px 0;
+    background-color: #0000FF;
+    color: white;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.footer .social a {
+    font-size: 20px;
+    color: inherit;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.8;
+}
+
+.footer .list {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer .list li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.footer .list li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .list li a:hover {
+    opacity: 1;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa
+}
+
+
+/*Navigation css*/
+
+.navbar {
+    overflow: hidden;
+    background-color: #0000FF;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: beige;
+    color: black;
+}
+
+.navbar a.active {
+    background-color: beige;
+    color: black
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.navbar navbarright a {
+    float: right;
+}
+
+.navbarright {
+    float: right;
+}

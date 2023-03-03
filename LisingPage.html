@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/listingPage/ListingPage.css">
+    <link rel="stylesheet" href="/mainPage/mainPage.css">
+    
+
+
+
+    <script type="text/javascript">
+        function updateTextColour(value) {
+            document.body.style.color = '#' + value;
+        }
+    </script>
+
+    <script>
+        function updateBackgroundColour(event) {
+            var color = event.value;
+            document.getElementsByTagName('BODY')[0].style.backgroundColor = color;
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="heading">
+        <img src="/images/siteLogo.png" alt="logo" width="200px" height="150px;">
+        
+        <h1>My Orders</h1>
+        <p>Past Orders</p>
+
+    </div>
+
+    <div class="navbar">
+
+
+        <a href="/mainPage/CourseWork1.html" class="active">Home</a>
+        <a href="/aboutUs/abtUs.html" target="_self">About us</a>
+        <a href="/Gallery/gallery_page.html" target="_self">Gallery</a>
+        <a href="/products/buyproductspage.html" target="_self">Products</a>
+   
+        <div class="navbarright">
+            <a href="/signUp/signup_form.html" target="_self">Login/Sign up</a>
+
+        </div>
+
+    </div>
+    <br>
+
+
+
+
+    <h4 class="text">Change Text Colour
+        <select name="backGround" size="1" onChange="updateTextColour(this.value)">
+        <option value="000000">Black(Default)</option>
+        <option value="f5f5f5">White</option>
+        <option value="c9362e">Red</option>
+        <option value="704a4f">Brown</option>
+        <option value="fc7ea6">Pink</option>
+        <option value="4b60eb">Blue</option>
+        <option value="eaf587">Yellow</option>
+        <option value="3eb1de">Light Blue</option>
+        <option value="8cf594">Light Green</option>
+        <option value="77ab63">Dark Green</option>
+        <option value="a014e0">Blue Violet</option>
+    </select> Change Background Colour
+        <select class="background" name="colors" size="1" onchange="updateBackgroundColour(this)">
+        <option value="#f5f5f5">White(Default)</option>
+        <option value="Black">Black</option>
+        <option value="#c9362e">Red</option>
+        <option value="#704a4f">Brown</option>
+        <option value="#fc7ea6">Pink</option>
+        <option value="#4b60eb">Blue</option>
+        <option value="#eaf587">Yellow</option>
+        <option value="#3eb1de">Light Blue</option>
+        <option value="#8cf594">Light Green</option>
+        <option value="#77ab63">Dark Green</option>
+        <option value="#a014e0">Blue Violet</option>
+    </select>
+    </h4>
+    <br>
+
+    <div id='content'>
+        <table id='orders' cellpadding='15px' style="text-align:left;">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Purchased Date</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        let xmlContent = '';
+        let tableOrders = document.getElementById('orders');
+        fetch('ListingPage.xml').then((response) => {
+            response.text().then((xml) => {
+                xmlContent = xml;
+
+                let parser = new DOMParser();
+                let xmlDOM = parser.parseFromString(xmlContent, 'application/xml');
+                let orders = xmlDOM.querySelectorAll('order');
+
+                orders.forEach(orderXmlNode => {
+
+                    let row = document.createElement('tr');
+
+                    //product
+                    let td = document.createElement('td');
+                    td.innerText = orderXmlNode.children[0].innerHTML;
+                    row.appendChild(td);
+
+                    //price
+                    td = document.createElement('td');
+                    td.innerText = '$' + orderXmlNode.children[1].innerHTML;
+                    row.appendChild(td);
+
+                    //quantity
+                    td = document.createElement('td');
+                    td.innerText = orderXmlNode.children[2].innerHTML;
+                    row.appendChild(td);
+
+                    //date
+                    td = document.createElement('td');
+                    td.innerText = orderXmlNode.children[3].innerHTML;
+                    row.appendChild(td);
+
+                    tableOrders.children[1].appendChild(row);
+
+                });
+
+            });
+        });
+    </script>
+    <br><br>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="/mainPage/CourseWork1.html">Home</a>
+            </li>
+            <li>
+                <a href="/Gallery/gallery_page.html">Gallery</a>
+            </li>
+            <li>
+                <a href="/aboutUs/abtUs.html">About us</a>
+            </li>
+            <li>
+                <a href="/student4/EditorsPage_Sathila.html">About editor</a>
+            </li>
+            <li>
+                <a href="/mainPage/ActivationForm%20(1).html">Subscribe to newsletter</a>
+            </li>
+
+        </ul>
+        <p class="copyright">
+            BuyAnything.com @ 2022
+        </p>
+    </footer>
+</body>
+
+</html>

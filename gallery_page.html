@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/Gallery/gallery_page.css">
+    <link rel="stylesheet" href="/mainPage/mainPage.css">
+    <link rel="stylesheet" href="/mainPage/feedback.css">
+    <title>Gallery Page</title>
+</head>
+
+<body>
+    <div class="heading">
+        <img src="/images/siteLogo.png" alt="logo" width="200px" height="150px;">
+        
+        <h1>BuyAnything</h1>
+        <p>A place for everyone</p>
+
+    </div>
+
+    <div class="navbar">
+
+
+        <a href="/mainPage/CourseWork1.html" target="_self">Home</a>
+        <a href="/aboutUs/abtUs.html" target="_self">About us</a>
+        <a href="/Gallery/gallery_page.html"  class="active">Gallery</a>
+        <a href="/products/buyproductspage.html" target="_self">Products</a>
+        <button class="open-Quiz" onclick="openQuiz()">Open Quiz</button>
+        <div class="navbarright">
+            <a href="/signUp/signup_form.html" target="_self">Login/Sign up</a>
+
+        </div>
+
+    </div>
+    <video id="background-video" autoplay loop muted poster="">
+        <source src="/images/highway-loop.mp4" type="video/mp4">
+    </video>
+
+    <div class="wrapper">
+        <div class="headline">
+            <h1>Gallery Page</h1>
+        </div>
+
+        <!-- The five columns -->
+        <div class="row">
+            <div class="column">
+                <p>Mobile Phones</p>
+                <img src="/images/mobile_phones.jpg" alt="A mobile phone is a wireless handheld device that allows users to make and receive calls. While the earliest generation of mobile phones could only make and receive calls, today's mobile phones do a lot more, accommodating web browsers, games, cameras, video players and navigational systems"
+                    style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <p>Earphones</p>
+                <img src="/images/Earphones.jpg" alt="Earphones are a small piece of equipment which you wear over or inside your ears so that you can listen to music, the radio, or your phone without anyone else hearing." style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <p>Laptops</p>
+                <img src="/images/Laptops.jpg" alt="A laptop computer is a small personal computer. They are designed to be more portable than traditional desktop computers, with many of the same abilities. Laptops are able to be folded flat for transportation and have a built-in keyboard and touchpad."
+                    style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <p>TV</p>
+                <img src="/images/TV.jpg" alt="Telegram television (also known as a TV) is a machine with a screen. Televisions receive broadcasting signals and change them into pictures and sound. The word 'television' comes from the words tele (Greek for far away) and vision (sight)."
+                    style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <p>Other</p>
+                <img src="/images/other.jpg" alt="Other the main fields mentioned we have a wide variety of different products such as Speakers and Chargers with us as well." style="width:100%" onclick="myFunction(this);">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="expandedImg">
+                <img id="expandedImg" style="width:50%; padding-left: 1em;padding-right: 2em;padding-bottom:1em; margin-top: 150px;">
+            </div>
+            <div id="imgtext"></div>
+        </div>
+    </div>
+
+
+
+    <script src="/Gallery/gallery_page.js"></script>
+<!--    <script src="script.js"></script>-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="/mainPage/CourseWork1.html">Home</a>
+            </li>
+            <li>
+                <a href="/Gallery/gallery_page.html">Gallery</a>
+            </li>
+            <li>
+                <a href="/aboutUs/abtUs.html">About us</a>
+            </li>
+            <li>
+                <a href="/student1/editor_page.html">About editor</a>
+            </li>
+            <li>
+                <a href="/mainPage/ActivationForm%20(1).html">Subscribe to newsletter</a>
+            </li>
+
+        </ul>
+        <p class="copyright">
+            BuyAnything.com @ 2022
+        </p>
+    </footer>
+</body>
+
+</html>

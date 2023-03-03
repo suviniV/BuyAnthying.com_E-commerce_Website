@@ -1,0 +1,120 @@
+.open-button{
+    background-color: beige;
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+.open-Quiz{
+    background-color: #0000FF;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: 0.8;
+    bottom: 43px;
+    
+}
+.open-Quiz:hover{
+    opacity: 0.5;
+    background-color: beige;
+    color: black;
+}
+.feedback{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid;
+    z-index: 9;
+}
+.feedback-editor{
+    text-align: center;
+    list-style: none;
+    color: white;
+    
+   
+}
+.feedback-editor a{
+    text-decoration: none;
+    color: inherit;
+}
+.feedback-editor a:hover{
+    opacity: 1;
+}
+
+.container1{
+    max-width: 300px;
+    padding: 20px;
+    background-color: #0000FF;
+    border: 0;
+    color: white;
+    
+}
+.feedback input[type=text]{
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: none;
+}
+.feedback input[type=text]:focus{
+    background-color: antiquewhite;
+    outline: none;
+}
+.feedback textarea{
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: none;
+}
+.container1 .btn{
+    background-color: #04AA6D;
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+.container1 .cancel{
+    background-color: orangered;
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+.container1 .btn:hover{
+    opacity: 0.5;
+}
+.open-button:hover{
+    opacity: 0.5;
+}
+.conatiner1 .cancel:hover{
+    opacity: 0.5;
+}
+.container1 .reset{
+    background-color: grey;
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+.container1 .reset:hover{
+    opacity: 0.5;
+}
+select{
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: none;
+}

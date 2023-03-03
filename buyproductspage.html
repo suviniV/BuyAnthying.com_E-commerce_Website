@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Products Page</title>
+      <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="/products/buyproductspageCSS.css">
+    <link rel="stylesheet" href="/mainPage/mainPage.css">
+    <link rel="stylesheet" href="/mainPage/feedback.css">
+    
+
+</head>
+
+
+<body>
+    <div class="heading">
+        <img src="/images/siteLogo.png" alt="logo" width="200px" height="150px;">
+        
+        <h1>BuyAnything</h1>
+        <p>A place for everyone</p>
+
+
+    </div>
+    <div class="navbar">
+
+
+        <a href="/mainPage/CourseWork1.html" target="_self" >Home</a>
+        <a href="/aboutUs/abtUs.html" target="_self">About us</a>
+        <a href="/Gallery/gallery_page.html" target="_self">Gallery</a>
+        <a href="/products/buyproductspage.html"  class="active">Products</a>
+        <button class="open-Quiz" onclick="openQuiz()">Open Quiz</button>
+        <div class="navbarright">
+            <a href="/signUp/signup_form.html" target="_self">Login/Sign up</a>
+
+        </div>
+
+    </div>
+    <!-- header -->
+    <header>
+
+        <!-- local navigation -->
+        <div id="localnav">
+            <ul class="locnav">
+                <li class="nav">
+                    <ul class="sub">
+                        <li class="active">
+                            <a href="#mobilephoneid">Mobile Phones/</a>
+                        </li>
+                        <li class="subnav">
+                            <a href="#laptopsid">Laptops/</a>
+                        </li>
+                        <li class="subnav">
+                            <a href="#earphonesid">Earphones/</a>
+                        </li>
+                        <li class="subnav">
+                            <a href="#tvid">Television/</a>
+                        </li>
+                        <li class="subnav">
+                            <a href="#speakerid">Speakers</a>
+                        </li>
+                        <li class="subnav">
+                            <a href="/listingPage/LisingPage.html">Past Orders</a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- End of local navigation-->
+    </header>
+    <!-- products~electronics -->
+
+
+    <h1 id="eh1">Electronics</h1>
+
+    <!-- products~electronics~ MobilePhones -->
+    <div class="electronictype" id="mobilephoneid">
+        <h2 class="eh2">Mobile Phones</h2>
+        <br/><br/>
+        <div class="column1">
+            <div class="card">
+                <img src="/images/iphone12-black.jpg" alt="Image of iPhone 12-black" class="eimg" />
+                <div class="content">
+                    <h3 class="productname">iPhone 12-black</h3>
+                    <p class="details">Details:</p>
+                    <p class="details"> With A14 Bionic, great battery , Night mode on every camera, 5G speed, Ceramic Shield,Retina XDR display</p>
+                    <p class="price">$580</p>
+                    <form name="mobilephones1">
+                        <label for="electronicsitem1">Quantity:</label>
+                        <select id="electronicsitem1" name="electronicsitem1">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+										</select>
+
+                    </form>
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('iPhone 12-black','$580')">Add to Cart</button>
+                    <br/>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="column1">
+            <div class="card">
+                <img src="/images/iphone12-purple.jpg" alt="Image of iPhone 12-purple" class="eimg" />
+                <div class="content">
+                    <h3 class="productname">iPhone 12-purple</h3>
+                    <p class="details">Details:</p>
+                    <p class="details"> With A14 Bionic, great battery , Night mode on every camera, 5G speed, Ceramic Shield,Retina XDR display</p>
+                    <p class="price" id="p2">$590</p>
+                    <form name="mobilephones2">
+                        <label for="electronicsitem2">Quantity:</label>
+                        <select id="electronicsitem2" name="electronicsitem2">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+										</select>
+
+                    </form>
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('iPhone 12-purple','$590')">Add to Cart</button>
+                </div>
+                <br/>
+
+
+            </div>
+
+        </div>
+
+        <div class="column1">
+            <div class="card">
+                <img src="/images/Samsung-Galaxy-S21-black.jpg" alt="Image of Samsung-Galaxy-S21-black" class="eimg" />
+                <div class="content">
+                    <h3 class="productname">Samsung-Galaxy-S21-black</h3>
+                    <p class="details">Details:</p>
+                    <p class="details">5G Android smartphone., 256 GB storage, 8 GB RAM Features 6.2″ display, Exynos 2100 chipset, 4000 mAh battery</p>
+                    <p class="price">$450</p>
+                    <form name="mobilephones3">
+                        <label for="electronicsitem3">Quantity:</label>
+                        <select id="electronicsitem3" name="electronicsitem3">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+										</select>
+
+                    </form>
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('Samsung-Galaxy-S21-black','$450')">Add to Cart</button>
+                </div>
+                <br/>
+
+            </div>
+        </div>
+
+        <div class="column1">
+            <div class="card">
+                <img src="/images/samsunggalaxy-S21-purple.jpeg" alt="Image of Samsung-Galaxy-S21-purple " class="eimg" />
+                <div class="content">
+                    <h3 class="productname">Samsung-Galaxy-S21-purple</h3>
+                    <p class="details">Details:</p>
+                    <p class="details">5G Android smartphone, 256 GB storage, 8 GB RAMFeatures 6.2″ display, Exynos 2100 chipset, 4000 mAh battery</p>
+                    <p class="price">$455</p>
+                    <form name="mobilephones4">
+                        <label for="electronicsitem4">Quantity:</label>
+                        <select id="electronicsitem4" name="electronicsitem4">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+											</select>
+
+                    </form>
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('Samsung-Galaxy-S21-purple','$455')">Add to Cart</button>
+                </div>
+                <br/>
+
+            </div>
+        </div>
+
+    </div>
+    <br/><br/>
+    <!-- products~electronics~ Laptops -->
+
+    <div class="electronictype" id="laptopsid">
+        <h2 class="eh2">Laptops</h2>
+        <br/><br/>
+        <div class="column1">
+
+            <div class="card">
+                <img src="/images/AsusVivobook.jpg" alt="Image of Asus Vivobook" class="eimg" />
+                <div class="content">
+                    <h3 class="productname">Asus Vivobook </h3>
+                    <p class="details">Details:</p>
+                    <p class="details">Asus X512DA-BTS2020RL 15.6" Full HD Laptop – AMD Ryzen 5,512GB PCIe SSD – 16GB RAM</p>
+                    <p class="price">$1095</p>
+                    <form name="laptops1">
+                        <label for="electronicsitem5">Quantity:</label>
+                        <select id="electronicsitem5" name="electronicsitem5">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+										</select>
+
+                    </form>
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('Asus Vivobook','$1095')">Add to Cart</button>
+                </div>
+                <br/>
+
+            </div>
+        </div>
+
+        <div class="column1">
+            <div class="card">
+                <img src="/images/hplaptop.jpg" alt="Image of HP Pavilion 15" class="eimg" />
+                <div class="content">
+                    <h3 class="productname">HP Pavilion 15</h3>
+                    <p class="details">Details:</p>
+                    <p class="details">HP Pavilion 15 Laptop: AMD Ryzen 7 4700U,512GB SSD, 16GB DDR4 RAM, 15.6" Full HD IPS</p>
+                    <p class="price">$1010</p>
+                    <form name="laptops2">
+                        <label for="electronicsitem6">Quantity:</label>
+                        <select id="electronicsitem6" name="electronicsitem6">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+										</select>
+
+                    </form>
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('HP Pavilion 15','$1010')">Add to Cart</button>
+                </div>
+                <br/>
+
+            </div>
+        </div>
+
+        <div class="column1">
+            <div class="card">
+                <img src="/images/macbook.jpg" alt="Image of Apple Macbook Air" class="eimg" />
+                <div class="content">
+                    <h3 class="productname">Apple Macbook Air</h3>
+                    <p class="details">Details:</p>
+                    <p class="details">2020 Apple MacBook Air Laptop: Apple M1 Chip,13” Retina Display,8GB RAM, 256GB </p>
+                    <p class="price">$2000</p>
+                    <form name="laptops3">
+                        <label for="electronicsitem7">Quantity:</label>
+                        <select id="electronicsitem7" name="electronicsitem7">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+										</select>
+
+                    </form>
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('Apple Macbook Air','$2000')">Add to Cart</button>
+                </div>
+                <br/>
+
+            </div>
+        </div>
+
+        <div class="column1">
+            <div class="card">
+                <img src="/images/Asus.jpg" alt="Image of Samsung-Galaxy-S21-purple" class="eimg" />
+                <div class="content">
+                    <h3 class="productname">Samsung-Galaxy-S21-purple</h3>
+                    <p class="details">Details:</p>
+                    <p class="details">ASUS Laptop L510, 15.6" Full HD, Intel Pentium Silver N5030, 4GB RAM, 128GB eMMC</p>
+                    <p class="price">$1000</p>
+                    <form name="laptops4">
+                        <label for="electronicsitem8">Quantity:</label>
+                        <select id="electronicsitem8" name="electronicsitem8">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+										</select>
+
+                    </form>
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('Samsung-Galaxy-S21-purple','$1000')">Add to Cart</button>
+                </div>
+                <br/>
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <br/><br/>
+
+    <!-- products~electronics~ Earphones -->
+
+    <div class="electronictype" id="earphonesid">
+        <h2 class="eh2">Earphones</h2>
+        <br/><br/>
+        <div class="column1">
+
+            <div class="card">
+                <img src="/images/Airpods.jpg" alt="Image of Airpods earphones" class="eimg" />
+                <div class="content">
+                    <h3 class="productname">Airpods</h3>
+                    <p class="details">Details:</p>
+                    <p class="details">Wireless Bluetooth Earphone Auto Pairing Sync Portable Charging Case Ultra-Light Voice Prompts </p>
+                    <p class="price">$400</p>
+                    <form name="earphones1">
+                        <label for="electronicsitem9">Quantity:</label>
+                        <select id="electronicsitem9" name="electronicsitem9">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+											</select>
+
+                    </form>
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('Airpods','$400')">Add to Cart</button>
+                </div>
+                <br/>
+
+            </div>
+        </div>
+
+        <div class="column1">
+            <div class="card">
+                <img src="/images/beats.jpg" alt="Image of Beats Headphones" class="eimg" />
+                <div class="content">
+                    <h3 class="productname">Beats Headphones</h3>
+                    <p class="details">Details:</p>
+                    <p class="details">Beats EP Wired On-Ear Headphones, Fits All 3.5mm InterfaceStereo for Samsung,iPhone</p>
+                    <p class="price">$350</p>
+                    <form name="earphones2">
+                        <label for="electronicsitem10">Quantity:</label>
+                        <select id="electronicsitem10" name="electronicsitem10">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+										</select>
+
+                    </form>
+
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('Beats Headphones','$350')">Add to Cart</button>
+                </div>
+                <br/>
+
+
+            </div>
+        </div>
+
+        <div class="column1">
+            <div class="card">
+                <img src="/images/bluetooth.jpg" alt="Image of Attk Bluetooth Earphones" class="eimg" />
+                <div class="content">
+                    <h3 class="productname">Attk Bluetooth Earphones</h3>
+                    <p class="details">Details:</p>
+                    <p class="details">Wireless Earbuds for Gym Activity, Best 5.0 Bluetooth Wireless Earbuds, HBQ Brand V5.0</p>
+                    <p class="price">$300</p>
+                    <form name="earphones3">
+                        <label for="electronicsitem11">Quantity:</label>
+                        <select id="electronicsitem11" name="electronicsitem11">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+										</select>
+
+                    </form>
+
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('Attk Bluetooth Earphones','$300')">Add to Cart</button>
+
+                </div>
+                <br/>
+
+            </div>
+        </div>
+
+        <div class="column1">
+            <div class="card">
+                <img src="/images/blackearphones.jpg" alt="Image of heyday Headphones" class="eimg" />
+                <div class="content">
+                    <h3 class="productname">heyday Headphones</h3>
+                    <p class="details">Details:</p>
+                    <p class="details">heyday™ Active Noise Cancelling Bluetooth Over-Ear Headphones ComfortableFit, 120Hrs</p>
+                    <p class="price">$600</p>
+                    <form name="earphones4">
+                        <label for="electronicsitem12">Quantity:</label>
+                        <select id="electronicsitem12" name="electronicsitem12">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+										</select>
+
+                    </form>
+
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('heyday Headphones','$600')">Add to Cart</button>
+                </div>
+                <br/>
+
+            </div>
+        </div>
+    </div>
+    <br/><br/>
+
+    <!-- products~electronics~ TV -->
+    <div class="electronictype" id="tvid">
+        <h2 class="eh2">Television</h2>
+        <br/><br/>
+        <div class="column1">
+
+            <div class="card">
+                <img src="/images/TV1.png" alt="Image of TCL TV" class="eimg" />
+                <div class="content">
+                    <h3 class="productname">TCL TV</h3>
+                    <p class="details">Details:</p>
+                    <p class="details">TCL 65-inch Class 4-Series 4K UHD HDR Smart Roku TV – 65S435, 2021 Model</p>
+                    <p class="price">$700</p>
+                    <form name="tv1">
+                        <label for="electronicsitem13">Quantity:</label>
+                        <select id="electronicsitem13" name="electronicsitem13">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+											</select>
+
+                    </form>
+
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('TCL TV','$700')">Add to Cart</button>
+                </div>
+                <br/>
+
+            </div>
+        </div>
+
+        <div class="column1">
+            <div class="card">
+                <img src="/images/TV2.png" alt="Image of SAMSUNG AU8000 Series" class="eimg" />
+                <div class="content">
+                    <h3 class="productname">SAMSUNG AU8000 Series </h3>
+                    <p class="details">Details:</p>
+                    <p class="details">SAMSUNG 65-Inch UHD AU8000 Series - 4K HDR Smart TV with Alexa Built-in</p>
+                    <p class="price">$750</p>
+                    <form name="tv2">
+                        <label for="electronicsitem14">Quantity:</label>
+                        <select id="electronicsitem14" name="electronicsitem14">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+										</select>
+
+                    </form>
+
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('SAMSUNG AU8000 Series','$750')">Add to Cart</button>
+                </div>
+                <br/>
+
+            </div>
+        </div>
+
+        <div class="column1">
+            <div class="card">
+                <img src="/images/TV3.png" alt="Image of VIZIO TV" class="eimg" />
+                <div class="content">
+                    <h3 class="productname">VIZIO TV</h3>
+                    <p class="details">Details:</p>
+                    <p class="details">VIZIO 50-Inch V-Series 4K UHD LED Smart TV with Apple AirPlay and Chromecast</p>
+                    <p class="price">$650</p>
+                    <form name="tv3">
+                        <label for="electronicsitem15">Quantity:</label>
+                        <select id="electronicsitem15" name="electronicsitem15">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+										</select>
+
+                    </form>
+
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('VIZIO TV','$650')">Add to Cart</button>
+                </div>
+                <br/>
+
+            </div>
+        </div>
+
+        <div class="column1">
+            <div class="card">
+                <img src="/images/TV4.png" alt="Image of SAMSUNG AU8000 Series" class="eimg" />
+                <div class="content">
+                    <h3 class="productname">SAMSUNG AU8000 Series</h3>
+                    <p class="details">Details:</p>
+                    <p class="details">SAMSUNG 32-Inch 4K UHD Dual LED Quantum HDR Smart TV with Alexa</p>
+                    <p class="price">$800</p>
+                    <form name="tv4">
+                        <label for="electronicsitem16">Quantity:</label>
+                        <select id="electronicsitem16" name="electronicsitem16">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+										</select>
+
+                    </form>
+
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('SAMSUNG AU8000 Series','$800')">Add to Cart</button>
+                </div>
+                <br/>
+
+            </div>
+        </div>
+    </div>
+    <br/><br/>
+
+    <!-- products~electronics~ Speakers -->
+    <div class="electronictype" id="speakerid">
+        <h2 class="eh2">Speakers</h2>
+        <br/><br/>
+        <div class="column1">
+            <div class="card">
+                <img src="/images/Sp1.png" alt="Image of JBL FLIP 5" class="eimg" />
+                <div class="content">
+                    <h3 class="productname">JBL FLIP 5</h3>
+                    <p class="details">Details:</p>
+                    <p class="details">JBL FLIP 5, Waterproof Portable Bluetooth Speaker, Black</p>
+                    <p class="price">$300</p>
+                    <form name="speaker1">
+                        <label for="electronicsitem17">Quantity:</label>
+                        <select id="electronicsitem17" name="electronicsitem17">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+										</select>
+
+                    </form>
+
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('JBL FLIP 5','$300')">Add to Cart</button>
+                </div>
+                <br/>
+
+            </div>
+        </div>
+
+        <div class="column1">
+            <div class="card">
+                <img src="/images/Sp2.png" alt="Image of Echo Dot (4th Gen)" class="eimg" />
+                <div class="content">
+                    <h3 class="productname">Echo Dot (4th Gen)</h3>
+                    <p class="details">Details:</p>
+                    <p class="details">Echo Dot(4th Gen)Smart speaker with Alexa Blue</p>
+                    <p class="price">$400</p>
+                    <form name="speaker2">
+                        <label for="electronicsitem18">Quantity:</label>
+                        <select id="electronicsitem18" name="electronicsitem18">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+										</select>
+
+                    </form>
+
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('Echo Dot (4th Gen)','$400')">Add to Cart</button>
+                </div>
+                <br/>
+
+            </div>
+        </div>
+
+        <div class="column1">
+            <div class="card">
+                <img src="/images/Sp3.png" alt="Image of Majority Bowfell TV" class="eimg" />
+                <div class="content">
+                    <h3 class="productname">Majority Bowfell TV</h3>
+                    <p class="details">Details:</p>
+                    <p class="details">Majority Bowfell Small Sound Bar for TV with Bluetooth, RCA</p>
+                    <p class="price">$250</p>
+                    <form name="speaker3">
+                        <label for="electronicsitem19">Quantity:</label>
+                        <select id="electronicsitem19" name="electronicsitem19">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+										</select>
+
+                    </form>
+
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('Majority Bowfell','$250.80')">Add to Cart</button>
+                </div>
+                <br/>
+
+            </div>
+        </div>
+
+        <div class="column1">
+            <div class="card">
+                <img src="/images/Sp4.png" alt="Image of EDUPLINK Speaker" class="eimg" />
+                <div class="content">
+                    <h3 class="productname">EDUPLINK Speaker</h3>
+                    <p class="details">Details:</p>
+                    <p class="details">EDUPLINK Portable Bluetooth Waterproof Wireless Speaker </p>
+                    <p class="price">$270</p>
+                    <form name="speaker4">
+                        <label for="electronicsitem20">Quantity:</label>
+                        <select id="electronicsitem20" name="electronicsitem20">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+										</select>
+
+                    </form>
+
+                    <button class="add-btn" type="button" onclick="addingItemsToArray('EDUPLINK Speaker','$270')">Add to Cart</button>
+                </div>
+                <br/>
+
+
+            </div>
+        </div>
+    </div>
+
+    <br/><br/>
+
+    <div id="fontbutton">
+        <!-- buttons to increase ,decrease and reset the fonts -->
+        <button type="button" class="zoombtn" onclick="zoom_out()"> A- </button>
+        <button type="button" class="zoombtn" onclick="normal_font()"> A </button>
+        <button type="button" class="zoombtn" onclick="zoom_in()"> A+ </button>
+    </div>
+
+
+    <!-- form -->
+
+    <br/><br/><br/>
+    <div class="form">
+        <form name="form3">
+            <img src="/images/formimageperson.jpg" alt="" id="person" />
+            <hr>
+            <p id="pd">Billing Details
+                <p>
+                    <div class="row">
+                        <label for="fname">First Name: </label>
+                        <input type="text" name="fname" id="fname" placeholder="First Name">
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <label for="lname">Last Name: </label>
+                        <input type="text" name="lname" id="lname" placeholder="Last Name">
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <label for="address">Address: </label>
+                        <input type="text" name="address" id="address" placeholder="Home Address">
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <label for="email">Email Address: </label>
+                        <input type="text" name="email" id="email" placeholder="Email Address">
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <label for="tel">Telephone Number: </label>
+                        <input type="text" name="tel" id="tel" placeholder="07XXXXXXXX" maxlength="10">
+                    </div>
+                    <br/>
+
+                    <br/>
+                    <hr>
+                    <p id="tp">Total Price ($):</p>
+                    <p id="total"></p>
+                    <input type="button" id="submitbtn" onclick="validatingform(this.form)" value="Place Order">
+                    <br/><br/>
+                    <hr>
+        </form>
+    </div>
+
+    <br/><br/>
+    <!-- footer -->
+    <br/><br/>
+    <hr>
+    <script src="/mainPage/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="/mainPage/CourseWork1.html">Home</a>
+            </li>
+            <li>
+                <a href="/Gallery/gallery_page.html">Gallery</a>
+            </li>
+            <li>
+                <a href="/aboutUs/abtUs.html">About us</a>
+            </li>
+            <li>
+                <a href="/student3/Suvini.html">About editor</a>
+            </li>
+            <li>
+                <a href="/mainPage/ActivationForm%20(1).html">Subscribe to newsletter</a>
+            </li>
+
+        </ul>
+        <p class="copyright">
+            BuyAnything.com @ 2022
+        </p>
+    </footer>
+    <br/><br/>
+    <!-- script for the js function -->
+    <script src="/products/buyproductspage.js"></script>
+</body>
+
+</html>

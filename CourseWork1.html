@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BuyAnything</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+
+    <link rel="stylesheet" href="/mainPage/mainPage.css">
+    <link rel="stylesheet" href="/mainPage/feedback.css">
+
+</head>
+
+<body>
+
+    <div class="heading">
+        <img src="/images/siteLogo.png" alt="logo" width="200px" height="150px;">
+        <h1>BuyAnything.com</h1>
+        <p>A place for everyone</p>
+    </div>
+
+    <div class="navbar">
+        <a href="/mainPage/CourseWork1.html" class="active">Home</a>
+        <a href="/aboutUs/abtUs.html" target="_self">About us</a>
+        <a href="/Gallery/gallery_page.html" target="_self">Gallery</a>
+        <a href="/products/buyproductspage.html" target="_self">Products</a>
+        <button class="open-Quiz" onclick="openQuiz()">Open Quiz</button>
+        <div class="navbarright">
+            <a href="/signUp/signup_form.html" target="_self">Login/Sign up</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <video id="background-video" autoplay loop muted poster="">
+            <source src="/images/highway-loop.mp4" type="video/mp4">
+        </video>
+        <div class="description">
+            <br><br>
+
+            <br><br>
+            <br><br>
+            <p>We are an online ecommerce platfrom that enables users from all around the world to make their choices from the comfort of there homes. We provide with world recognized products from trusted brands.</p>
+        </div>
+        <button class="open-button" onclick="openForm()">Feedback</button>
+        <br><br>
+        <div class="video">
+            <H2>Here is what motivated us to get started&#33;</H2>
+            <video width="600" height="400" controls>
+				  <source src="/images/Steve%20Jobs%20Motivational%20Speech%20_%20Inspirational%20Video%20_%20Entrepreneur%20Motivation%20_%20Startup%20Stories.mp4" type="video/mp4">
+			  </video>
+        </div>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br>
+
+        <div class="partners">
+            <h1>Our trusted Brands</h1>
+            <br>
+        </div>
+        <div class="brands">
+            <div class="brand1">
+                <img src="/images/oneplus.jpeg" width="200" height="150" alt="oneplus logo">
+            </div>
+            <div class="brand2">
+                <img src="/images/apple.png" width="200" height="100" alt="apple logo">
+            </div>
+            <div class="brand3">
+                <img src="/images/samsung.webp" width="200" height="150" alt="samsung logo">
+            </div>
+            <div class="brand4">
+                <img src="/images/sony.webp" width="200" height="150" alt="samsung logo">
+            </div>
+            <div class=" brand5">
+                <img src="/images/Huawei-Logo-1.jpeg.crdownload" width="200" height="150" alt="huaweilogo">
+
+            </div>
+            <div class="brand6">
+                <img src="/images/JBL-Logo-Vector-scaled.jpeg" width="200" height="150" alt="JBL logo">
+            </div>
+
+        </div>
+
+        <div class="feedback" id="feedbackForm">
+
+            <form action="" class="container1" name="feedback" onsubmit="validateAll()">
+                <h1>Feedback Form</h1>
+                <label for="name"><b>Full name</b></label>
+                <br>
+                <input type="text" placeholder="Enter Full Name" name="name" id="name">
+                <br><br>
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input type="text" placeholder="Enter Email" name="email" id="email">
+                <br><br>
+                <label for="rating"><b>Rating</b></label>
+                <br>
+                <select id="rating" name="rating">
+                    <option value="" disabled selected hidden>Your choice</option>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="poor">Poor</option>
+                </select>
+                <br><br>
+                <label for="feedback"><b>Feedback</b></label>
+                <br>
+                <textarea cols="15" rows="5" placeholder="Your feedback" id="comment"></textarea>
+
+                <button type="reset" class="reset">Reset</button>
+                <button type="submit" class="btn" Submit>Submit</button>
+                <button type="button" class="cancel" onclick="closeForm()">Close</button>
+                <li class="feedback-editor">
+                    <a href="/student2/editorAbdul.html">About editor</a>
+                </li>
+            </form>
+        </div>
+        <br><br>
+        <hr>
+    </div>
+
+    <script src="/mainPage/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="/mainPage/CourseWork1.html">Home</a>
+            </li>
+            <li>
+                <a href="/Gallery/gallery_page.html">Gallery</a>
+            </li>
+            <li>
+                <a href="/aboutUs/abtUs.html">About us</a>
+            </li>
+            <li>
+                <a href="/student2/editorAbdul.html">About editor</a>
+            </li>
+            <li>
+                <a href="/mainPage/ActivationForm%20(1).html">Subscribe to newsletter</a>
+            </li>
+
+        </ul>
+        <p class="copyright">
+            BuyAnything.com @ 2022
+        </p>
+    </footer>
+</body>
+
+
+</html>
